@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Load Bootstap CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="LBS/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="LBS/bootstrap/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="LBS/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="LBS/css/style.css">
     </head>
     <body>
         <!-- Header -->
@@ -39,7 +39,18 @@
                         <a class="btn btn-lg btn-success" href="#">Cool Button</a>
                     </div>
                     <div class="cell">
-                        <a class="btn btn-lg btn-warning" href="#">Cool Button</a>
+                        <div class="dropdown">
+                            <button class="btn btn-warning dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown
+                                <span class="caret"></span>
+                            </button> 
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div> 
             </div>
@@ -64,9 +75,22 @@
                     <th style="text-align:center"><span class="label label-primary">What I do not like</span></th></tr></tfoot></table>
         </div>
         <!-- Footer -->
-        <div class="container-fluid bg-success">FOOTER</div>
+        <div class="footer-me container-fluid bg-danger">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#adress-school" data-toggle="tab">Adress School</a></li>
+                <li><a href="#adress-home" data-toggle="tab">Adress Home</a></li>
+            </ul>
+            <hr>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="adress-home">Adress Home</div>
+                <div class="tab-pane fade" id="adress-school">Adress School</div>
+            </div>
+        </div>
 
-        <!-- Load Bootstrap JS -->      
-        <script src="bootstrap/js/bootstrap.min.js"></script> 
+        <!-- Load Bootstrap JS -->  
+        <script src="LBS/js/jquery-3.2.1.min.js"></script>
+        <script src="LBS/bootstrap/js/bootstrap.min.js"></script> 
+        
+        
     </body>
 </html>
