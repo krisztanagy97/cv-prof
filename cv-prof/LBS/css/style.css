@@ -29,10 +29,15 @@
 .about-me .text-info span {
     
     display: inline-block;
-    width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px;
+    width: 110px;
     height: 40px;
     border: solid 1px red;
+    overflow: hidden;
 }
+
 .about-me .table-me {
     background-color: goldenrod;
     border: #000 dotted 1px;
