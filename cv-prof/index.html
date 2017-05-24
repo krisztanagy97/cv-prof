@@ -12,15 +12,37 @@
     </head>
     <body>
         <!-- Header -->
-        <div class="container-fluid bg-warning">HEADER</div>
+        <div class="container-fluid bg-warning">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myMenu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="#">My CV v2</a>
+                        
+                    </div>
+                    <div class="collapse navbar-collapse" id="myMenu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#who">My Picture</a></li>
+                            <li><a href="#where">About Me</a></li>
+                            <li><a href="#cont">Contact Me</a></li></ul>
+                    </div>
+                </div>
+            </nav>
+    
+        </div>
         <!-- Main Picture -->
-        <div class="container-fluid bg-danger text-center main-picture">
+        <div class="container-fluid bg-danger text-center main-picture" id="who">
             <h1 class="first-h1"><mark>This</mark> is <small>me</small></h1>
             <img class="img-circle img-responsive center-block" alt="This is my picture" src="img/bird.jpg">
             <h1 class="second-h1"><mark>Find</mark> about <small>me</small></h1>
         </div>
         <!-- About Me -->
-        <div class="container-fluid bg-info about-me">      
+        <div class="container-fluid bg-info about-me" id="where">      
             <p class="text-info bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Sed eu commodo ex. Integer id nisl finibus, semper nisi pellentesque, ultrices diam.<span>Text Inline-Block</span> Praesent consectetur, neque et maximus tincidunt, lorem eros iaculis lorem, ut imperdiet erat ipsum luctus augue. Sed vel nunc sit amet nibh interdum auctor mattis nec urna. Nam turpis orci, tincidunt sit amet faucibus at, iaculis quis diam. Cras imperdiet commodo purus in sollicitudin. Proin et enim enim. Cras feugiat magna vel lectus vehicula, sed tristique augue iaculis. Suspendisse elit dui, porttitor vitae bibendum at, facilisis sit amet enim. Nam pulvinar quam eu pellentes"que accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             
             
@@ -65,8 +87,14 @@
                         <td>Reading<span class="badge"><i class="fa fa-book" aria-hidden="true"></i></span></td>
                         <td>Facebook<span class="badge"><i class="fa fa-facebook" aria-hidden="true"></i></span></td></tr>
                     <tr>
-                        <td>Singing<span class="badge"><i class="fa fa-music" aria-hidden="true"></i></span></td>
-                        <td>Malna<span class="badge"><i class="fa fa-" aria-hidden="true"></i></span></td></tr>
+                        <td><div class="alert alert-danger">
+                            <button class="close" data-dismiss="alert"><i class="fa fa-times"></i></button>Singing<span class="badge"><i class="fa fa-music" aria-hidden="true"></i></span></div></td>
+                        <td>
+                            <div class="alert alert-info">
+                                <button class="close" data-dismiss="alert"><i class="fa fa-times"></i></button>
+                            Malna
+                            </div>
+                        </td></tr>
                     <tr>
                         <td>Running</td>
                         <td>Shopping<span class="badge"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span></td></tr></tbody>
@@ -74,18 +102,51 @@
                     <th style="text-align:center"><span class="label label-primary">What I like</span></th>
                     <th style="text-align:center"><span class="label label-primary">What I do not like</span></th></tr></tfoot></table>
         </div>
+        
+        
+        <!--Skills-->
+        
+        
+        <div class="container-fluid my-skills">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="progress skill-bootstrap">
+                        <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valeumax="100">BOOTSTRAP
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="progress skill-html">
+                        <div class="progress-bar progress-bar-striped active">HTML
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        
         <!-- Footer -->
-        <div class="footer-me container-fluid bg-danger">
+        <div class="footer-me container-fluid bg-danger" id="cont">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#adress-school" data-toggle="tab">Adress School</a></li>
                 <li><a href="#adress-home" data-toggle="tab">Adress Home</a></li>
             </ul>
             <hr>
             <div class="tab-content">
-                <div class="tab-pane fade active in" id="adress-home">Adress Home</div>
-                <div class="tab-pane fade" id="adress-school">Adress School</div>
+                <div class="tab-pane fade active in" id="adress-home">Nusfalau, Salaj, Romania<br>str Alszeg, nr. 10</div>
+                <div class="tab-pane fade" id="adress-school">Oradea, Bihor, Romania <br> Nufarul <br> Uiversitatea Emanuel</div>
             </div>
         </div>
+        
+        <div class="pos-master">
+            <div class="pos1"></div>
+            <div class="pos2"></div>
+            <div class="pos3"></div>
+            <div class="pos4"></div>
+        </div>
+            
+            
+        <div class="big-space"></div>
 
         <!-- Load Bootstrap JS -->  
         <script src="LBS/js/jquery-3.2.1.min.js"></script>

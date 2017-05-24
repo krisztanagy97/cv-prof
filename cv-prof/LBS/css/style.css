@@ -63,3 +63,56 @@ hr {
     padding-top: 30px;
     padding-bottom: 80px;
 }
+.big-space{
+    height:300px;
+}
+
+/***** SKILLS *****/
+.my-skills{
+    padding-top: 40px;
+}
+
+.my-skills .skill-bootstrap div {
+    width: 60%;
+}
+.my-skills .skill-html div{
+    width: 80%;
+}
+.my-skills ul{
+    list-style-type: none;
+}
+
+
+/****FOOTER DIVS****/
+.pos-master{
+    position:absolute;
+    width:100%;
+    height: 150px;
+}
+
+.pos1, .pos2, .pos3, .pos4{
+    width: 60px;
+    height: 40px;
+    position: relative;
+}
+.pos1{
+    background-color: mediumvioletred;  
+    z-index:10;
+}
+.pos2{
+    background-color: dodgerblue;
+    left:30px;
+    top:-20px;
+    z-index: 8;
+    position:absolute;
+}
+.pos3{
+    background-color: mediumvioletred;
+    z-index:11;
+}
+.pos4{
+    background-color: dodgerblue;
+    left:30px;
+    top:-20px;
+    z-index:9;
+}
