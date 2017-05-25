@@ -41,13 +41,12 @@
 .about-me .table-me {
     background-color: goldenrod;
     border: #000 dotted 1px;
-    float:left;
-    width:50%;
+    width:100%;
 }
 hr {
     border: 2px solid black;
 }
-.about-me .row {
+.about-me .row-me {
     display: table-row;
 }
 .about-me .cell {
@@ -55,9 +54,7 @@ hr {
     padding:30px;
 }
 .about-me table{
-    margin-top: 30px;
-    width:50%;
-    float:left;
+    width:100%;
 }
 .footer-me{
     padding-top: 30px;
