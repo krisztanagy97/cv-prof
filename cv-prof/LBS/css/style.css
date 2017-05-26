@@ -14,10 +14,10 @@
     margin: 50px;
 }
 .main-picture .first-h1 {
-    /*display: none;*/
+    padding-top:30px;
 }
 .main-picture .second-h1 {
-    /*visibility: hidden;*/
+    padding-top:30px;
 }
 .about-me {
     padding-top: 50px;
